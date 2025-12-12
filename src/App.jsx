@@ -9,11 +9,11 @@ const App = () => {
   const tabState = ["All", "Active", "Inactive"];
 
   return (
-    <div className="w-screen min-h-screen bg-custum-neutral-200 px-4 py-6 flex flex-col gap-4">
+    <div className="w-screen min-h-screen bg-[image:var(--gradient-custum-light)] dark:bg-[image:var(--gradient-custum-dark)] px-4 py-6 flex flex-col gap-4">
       <Header />
 
       <div className="w-full lg:w-8/10 mx-auto flex flex-col sm:flex-row sm:justify-between items-center my-6">
-        <h2 className="text-4xl font-bold text-custum-neutral-900 py-4">Extensions List</h2>
+        <h2 className="text-4xl font-bold text-custum-neutral-900 dark:text-custum-neutral-0 py-4">Extensions List</h2>
 
         <Tabs 
           tabs={tabState}

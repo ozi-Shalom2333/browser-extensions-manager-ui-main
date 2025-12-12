@@ -3,7 +3,7 @@ export default function ToggleSwitch({ isOn, onToggle }) {
     <div
       onClick={onToggle}
       className={`w-12 sm:w-11 md:w-13 px-0.5 sm:px-0.5 md:px-0.75 h-6 sm:h-5.5 md:h-6.5 flex items-center rounded-full cursor-pointer transition-colors duration-300 ${
-        isOn ? 'bg-custum-red-700' : 'bg-custum-neutral-300'
+        isOn ? 'bg-custum-red-700' : 'bg-custum-neutral-300 dark:bg-custum-neutral-600'
       }`}
     >
       <div

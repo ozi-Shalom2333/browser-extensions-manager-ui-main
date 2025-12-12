@@ -1,14 +1,16 @@
-/* 1. Import fonts FIRST */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
-/* 2. Then import Tailwind */
+
 @import "tailwindcss";
 
-/* 3. Then your theme */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @theme custum {
   --font-custum: "Noto Sans", sans-serif;
 
-  /* Colors — Neutral */
+  
   --color-custum-neutral-900: hsl(227, 75%, 14%);
   --color-custum-neutral-800: hsl(226, 25%, 17%);
   --color-custum-neutral-700: hsl(225, 23%, 24%);
@@ -18,12 +20,12 @@
   --color-custum-neutral-100: hsl(0, 0%, 93%);
   --color-custum-neutral-0:   hsl(200, 60%, 99%);
 
-  /* Colors — Red */
+ 
   --color-custum-red-400: hsl(3, 86%, 64%);
   --color-custum-red-500: hsl(3, 71%, 56%);
   --color-custum-red-700: hsl(3, 77%, 44%);
 
-  /* Gradients */
+ 
   --gradient-custum-light: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
   --gradient-custum-dark:  linear-gradient(180deg, #040918 0%, #091540 100%);
 

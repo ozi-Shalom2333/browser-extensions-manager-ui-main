@@ -12,8 +12,8 @@ const Tabs = ({ tabs }) => {
           className={`
             px-4  py-2 rounded-3xl font-medium  transition
             ${activeTab === tab 
-              ? "bg-custum-red-700 text-white" 
-              : "bg-custum-neutral-0 text-custum-neutral-900 hover:bg-custum-neutral-300"}
+              ? "bg-custum-red-700 text-white dark:text-custum-neutral-900" 
+              : "bg-custum-neutral-0 dark:bg-custum-neutral-700 dark:hover:bg-custum-neutral-600 text-custum-neutral-900 dark:text-custum-neutral-300 hover:bg-custum-neutral-300"}
           `}
         >
           {tab}
